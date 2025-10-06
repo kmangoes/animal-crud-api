@@ -15,7 +15,7 @@ private AnimalRepository animalRepository;
 public Object getAllAnimals() {
     return animalRepository.findAll();
 }
-public Object getAnimalById(@PathVariable Long animalId) {
+public Animal getAnimalById(@PathVariable Long animalId) {
     return animalRepository.findById(animalId).orElse(null);
 }
 public Object getAnimalByClassification (String classification) {
