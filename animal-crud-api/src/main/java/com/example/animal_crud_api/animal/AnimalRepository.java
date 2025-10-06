@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
 
-
     @Query("SELECT a FROM Animal a WHERE a.classification = ?1")
     List<Animal> getAnimalByClassification(String classification);
 

@@ -26,7 +26,11 @@ public Animal getAnimalById(@PathVariable Long animalId) {
 }
 @GetMapping("/animals/classification/{classification}")
 public Object getAnimalByClassification(@PathVariable String classification) {
+    if (classification != null) {
     return animalService.getAnimalByClassification(classification);
+    } else {
+        return animalService.getAllAnimals();
+    }
 }
 @GetMapping("/animals/name")
 public Object getAnimalsByName(@RequestParam String key) {
@@ -54,4 +58,4 @@ public Object deleteAnimal(@PathVariable Long animalId) {
     return animalService.getAllAnimals();
 }
 
-}
+        }
