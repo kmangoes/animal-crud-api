@@ -68,5 +68,11 @@ public class Animal {
     public void setAge(double age) {
         this.age = age;
     }
+    public String getClassification() {
+        return classification;
+    }
+    public void setClassification(String classification) {
+        this.classification = classification;
+    }
 
 }
