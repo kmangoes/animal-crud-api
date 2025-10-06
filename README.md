@@ -1,8 +1,20 @@
-## Animal CRUD API
-CSC-340 assignment. Creating CRUD API that will function as the backend for previously-created animal gallery frontend.
+## Animal CRUD API  
 
-### API Endpoints
+CSC-340 assignment. Creating CRUD API that will function as the backend for previously created animal gallery frontend.  
+
 ---
+
+### Installation  
+
+
+
+
+     
+
+---
+
+### API Endpoints  
+
 Base URL: http://localhost:8080/animals
 #### 1. /animals **(GET)**
 Gets a list of all animals in the database.  
