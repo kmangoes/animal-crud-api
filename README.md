@@ -1,19 +1,29 @@
-## Animal CRUD API  
+# Animal CRUD API  
 
 CSC-340 assignment. Creating CRUD API that will function as the backend for previously created animal gallery frontend.  
 
----
 
-### Installation  
+## Installation  
+- Get the project
+    - clone
+        ```
+      git clone https://github.com/kmangoes/animal-crud-api.git
+        ```
+    - OR download zip
+ - This project is build to run on JDK 21
+ - open in vsCode
+ - **Dependencies:** JPA and PostgresSQL
 
-
-
-
-     
-
----
-
-### API Endpoints  
+ - [`/src/main/resources/application.properties`](https://github.com/csc340-uncg/f25-jpa-crud-api/blob/6b2860c4ad01ca46b6b62852ca966bfadc8dfc6a/src/main/resources/application.properties) This file has the configuration for the PostgreSQL database to use for the API.
+  - You MUST have the database up and running before running the project!
+    - Login to your neon.tech account.
+    - Locate your database project.
+    - On the project dashboard, click on "Connect" and select Java.
+    - Copy the connection string provided.
+    - Paste it as a value for the property `spring.datasource.url`. No quotation marks.
+- Build and run the main class. You should see a new table created in the Neon database.
+  
+## API Endpoints  
 
 Base URL: http://localhost:8080/animals
 #### 1. /animals **(GET)**
